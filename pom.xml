@@ -7,6 +7,7 @@
     <groupId>com.hzl.cloud</groupId>
     <artifactId>hadoopcloud-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
     <properties>
         <java.version>1.8</java.version>
@@ -15,6 +16,10 @@
         <nacos.version>2.1.1.RELEASE</nacos.version>
 
     </properties>
+
+    <!--<modules>-->
+        <!--<module>hadoop-cloud-register</module>-->
+    <!--</modules>-->
 
     <dependencies>
         <!-- optional介绍https://blog.csdn.net/lovejj1994/article/details/80283240-->
@@ -38,6 +43,7 @@
 
 
     <dependencyManagement>
+        <!--https://blog.csdn.net/qq_36838191/article/details/90648774-->
         <dependencies>
 
             <dependency>
@@ -62,6 +68,7 @@
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
                 <version>${nacos.version}</version>
                 <type>pom</type>
+                <scope>import</scope>
             </dependency>
 
 
