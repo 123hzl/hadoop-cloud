@@ -23,6 +23,7 @@
         <mysql>8.0.18</mysql>
         <pagehelper>1.2.13</pagehelper>
         <commons-lang3>3.9</commons-lang3>
+        <tk.mybatis>2.1.5</tk.mybatis>
     </properties>
 
     <!--<modules>-->
@@ -181,8 +182,13 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
-
-
+        <!-- https://mvnrepository.com/artifact/tk.mybatis/mapper-spring-boot-starter -->
+        <!--mybatis工具类，封装类通用查询通过继承com.hzl.hadoop.config.mybatis.BaseMapper就可以执行封装好的增删改查方法-->
+        <dependency>
+            <groupId>tk.mybatis</groupId>
+            <artifactId>mapper-spring-boot-starter</artifactId>
+            <version>${tk.mybatis}</version>
+        </dependency>
     </dependencies>
 
 
