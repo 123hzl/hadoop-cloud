@@ -21,6 +21,8 @@
         <commons-collections>3.2.2</commons-collections>
         <mybatis>2.1.1</mybatis>
         <mysql>8.0.18</mysql>
+        <pagehelper>1.2.13</pagehelper>
+        <commons-lang3>3.9</commons-lang3>
     </properties>
 
     <!--<modules>-->
@@ -156,6 +158,30 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>${mysql}</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.github.pagehelper/pagehelper-spring-boot-starter -->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+            <version>${pagehelper}</version>
+        </dependency>
+        <!--开启aop-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+        <!--数组，字符串等工具类-->
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${commons-lang3}</version>
+        </dependency>
+        <!--jpa简化开发，一些简单的sql和更新删除操作不需要写mapper-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+
 
     </dependencies>
 
