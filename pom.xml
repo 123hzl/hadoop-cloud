@@ -24,6 +24,7 @@
         <pagehelper>1.2.13</pagehelper>
         <commons-lang3>3.9</commons-lang3>
         <tk.mybatis>2.1.5</tk.mybatis>
+        <redisson>3.11.3</redisson>
     </properties>
 
     <!--<modules>-->
@@ -200,6 +201,16 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
+        <!--redission，redis工具类，提供分布式锁功能-->
+        <!-- https://mvnrepository.com/artifact/org.redisson/redisson -->
+        <!--<dependency>-->
+            <!--<groupId>org.redisson</groupId>-->
+            <!--<artifactId>redisson</artifactId>-->
+            <!--<version>${redisson}</version>-->
+        <!--</dependency>-->
+        <!-- https://mvnrepository.com/artifact/org.redisson/redisson-spring-boot-starter -->
+
+
     </dependencies>
 
 
@@ -232,6 +243,14 @@
                 <scope>import</scope>
             </dependency>
 
+            <!--starter引用-->
+            <dependency>
+                <groupId>org.redisson</groupId>
+                <artifactId>redisson-spring-boot-starter</artifactId>
+                <version>${redisson}</version>
+            </dependency>
+            <!--starter引用结束-->
+
         </dependencies>
     </dependencyManagement>
 
@@ -254,8 +273,8 @@
                 <version>3.7.0</version>
                 <inherited>true</inherited>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
                     <parameters>true</parameters>
                 </configuration>
             </plugin>
