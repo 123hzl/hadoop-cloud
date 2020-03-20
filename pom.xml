@@ -15,7 +15,7 @@
         <spring-cloud.version>Greenwich.SR3</spring-cloud.version>
         <nacos.version>2.1.0.RELEASE</nacos.version>
         <gson>2.8.5</gson>
-        <fastjson>1.2.62</fastjson>
+        <fastjson>1.2.67</fastjson>
         <commons-io>2.6</commons-io>
         <commons-beanutils>1.9.4</commons-beanutils>
         <commons-collections>3.2.2</commons-collections>
