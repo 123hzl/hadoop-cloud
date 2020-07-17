@@ -11,9 +11,9 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <spring-boot.version>2.1.9.RELEASE</spring-boot.version>
-        <spring-cloud.version>Greenwich.SR3</spring-cloud.version>
-        <nacos.version>2.1.0.RELEASE</nacos.version>
+        <spring-boot.version>2.2.5.RELEASE</spring-boot.version>
+        <spring-cloud.version>Hoxton.SR3</spring-cloud.version>
+        <nacos.version>2.2.1.RELEASE</nacos.version>
         <gson>2.8.5</gson>
         <fastjson>1.2.67</fastjson>
         <commons-io>2.6</commons-io>
@@ -25,6 +25,7 @@
         <commons-lang3>3.9</commons-lang3>
         <tk.mybatis>2.1.5</tk.mybatis>
         <redisson>3.11.3</redisson>
+        <el>2.2.4</el>
     </properties>
 
     <!--<modules>-->
@@ -202,7 +203,16 @@
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
 
-
+        <!--<dependency>-->
+            <!--<groupId>javax.el</groupId>-->
+            <!--<artifactId>javax.el-api</artifactId>-->
+            <!--<version>${el}</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.glassfish.web</groupId>-->
+            <!--<artifactId>javax.el</artifactId>-->
+            <!--<version>${el}</version>-->
+        <!--</dependency>-->
     </dependencies>
 
 
