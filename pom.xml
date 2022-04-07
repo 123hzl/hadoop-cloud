@@ -16,7 +16,7 @@
         <nacos.version>2.2.1.RELEASE</nacos.version>
         <gson>2.8.5</gson>
         <fastjson>1.2.78</fastjson>
-        <commons-io>2.6</commons-io>
+        <commons-io>2.7</commons-io>
         <commons-beanutils>1.9.4</commons-beanutils>
         <commons-collections>3.2.2</commons-collections>
         <mybatis>2.2.0</mybatis>
