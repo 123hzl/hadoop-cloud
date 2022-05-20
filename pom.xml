@@ -14,7 +14,7 @@
         <spring-boot.version>2.5.0</spring-boot.version>
         <spring-cloud.version>2020.0.3</spring-cloud.version>
         <nacos.version>2.2.1.RELEASE</nacos.version>
-        <gson>2.8.5</gson>
+        <gson>2.8.9</gson>
         <fastjson>1.2.78</fastjson>
         <commons-io>2.6</commons-io>
         <commons-beanutils>1.9.4</commons-beanutils>
